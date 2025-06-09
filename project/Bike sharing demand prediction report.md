@@ -40,50 +40,50 @@ That choice is based on the fact that clearly, AutoGluon is very good at predict
 |hpo|12x60|best_quality|nn:activation -- dropout_prob; gmb:num_boost_round -- num_leaves; scheduler; searcher|1.3044|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
-![model_train_score.png](F:\Udu\New\model_train_score.png)
+![model_train_score.png](img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
-![model_test_score.png](F:\Udu\New\model_test_score.png)
+![model_test_score.png](img/model_test_score.png)
 
 ## Summary
 Three models were developed and evaluated:
 
-Model 1: Baseline Model
-Used as the reference point for comparison
+### Model 1: Baseline Model
+*Used as the reference point for comparison
 
-Trained for 600 seconds with best_quality presets
+*Trained for 600 seconds with best_quality presets
 
-Evaluation R²: 0.8852290511131287
+*Evaluation R²: 0.8852290511131287
 
-Evaluation Pearson correlation: 0.8852290511131287
+*Evaluation Pearson correlation: 0.8852290511131287
 
-Kaggle Score: 1.80121
+*Kaggle Score: 1.80121
 
-Model 2: Feature-Engineered Version of Model 1
+### Model 2: Feature-Engineered Version of Model 1
 Built by updating the data used in Model 1
 
-Performed feature engineering on the datetime column, extracting new features: year, month, day, and hour
+*Performed feature engineering on the datetime column, extracting new features: year, month, day, and hour
 
-Categorical type was explicitly set for: season, workingday, and weather
+*Categorical type was explicitly set for: season, workingday, and weather
 
-Trained for 600 seconds with best_quality presets
+*Trained for 600 seconds with best_quality presets
 
-Evaluation R²: 0.9629054069519043
+*Evaluation R²: 0.9629054069519043
 
-Evaluation Pearson correlation:0.9812943816620183
+*Evaluation Pearson correlation: 0.9812943816620183
 
-Kaggle Score: 0.5365
+*Kaggle Score: 0.5365
 
-Model 3: Extended Version of Model 1
-Retained the original dataset (with the unmodified datetime column)
+### Model 3: Extended Version of Model 1
+*Retained the original dataset (with the unmodified datetime column)
 
-Trained on more data than Model 1
+*Trained on more data than Model 1
 
-Trained for 720 seconds with best_quality presets
+*Trained for 720 seconds with best_quality presets
 
-Evaluation R²:  0.6282198429107666
+*Evaluation R²:  0.6282198429107666
 
-Evaluation Pearson correlation: 0.8038187102583518
+*Evaluation Pearson correlation: 0.8038187102583518
 
-Kaggle Score: 1.3044
+*Kaggle Score: 1.3044
 
